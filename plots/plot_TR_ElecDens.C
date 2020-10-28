@@ -24,7 +24,7 @@
   }
 
   hstack->Draw("nostack HIST C");
-  hstack->GetXaxis()->SetTitle("E (eV)");
+   hstack->GetXaxis()->SetTitle("R (nm)");
   hstack->GetYaxis()->SetTitle("Density (nm-3)");
 
   TLegend* leg=new TLegend();
