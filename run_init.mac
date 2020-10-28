@@ -1,0 +1,22 @@
+/run/numberOfThreads 1
+/control/verbose 2
+/run/verbose 2
+
+############################################
+
+#/FilmTrack/det/setFilmXY   1 um
+#/FilmTrack/det/setFilmZ    20 um
+
+/FilmTrack/stepMax 10 nm
+
+#/FilmTrack/phys/addPhysics dna
+#/FilmTrack/phys/addPhysics dna_opt1
+#/FilmTrack/phys/addPhysics dna_opt2
+#/FilmTrack/phys/addPhysics dna_opt3
+#/FilmTrack/phys/addPhysics dna_opt4
+#/FilmTrack/phys/addPhysics dna_sta_opt2 #no this list on cluster
+
+############################################
+
+/run/initialize
+#/tracking/verbose 2
