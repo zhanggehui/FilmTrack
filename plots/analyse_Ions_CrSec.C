@@ -47,10 +47,15 @@
   mg->Draw("ACP");
   mg->SetTitle("CrSection vs. Spower");
   mg->GetXaxis()->SetTitle("dE/dX (keV/nm)");
+  mg->GetXaxis()->SetTitleSize(0.04);
+  mg->GetXaxis()->SetLabelSize(0.04);
   mg->GetYaxis()->SetTitle("CrSection (nm2)");
+  mg->GetYaxis()->SetTitleSize(0.04);
+  mg->GetYaxis()->SetLabelSize(0.04);
 
   TLegend* leg=new TLegend();
   leg->AddEntry(gr,"Simulation","l");
-  leg->AddEntry(experimentgr,"Experimental by Yamauchi(2008)","l");
+  leg->AddEntry(experimentgr,"Experimental","l");
+  leg->SetTextSize(0.045);
   leg->Draw();
 } 
